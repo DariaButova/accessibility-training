@@ -1,3 +1,56 @@
+:focus {
+  outline: 2px solid #0A3054;
+}
+input.input:focus {
+  outline: 2px solid #0A3054;
+}
+button:focus {
+  outline: 2px solid #0A3054;
+}
+
+.button:active,
+.button:focus,
+.file-cta:active,
+.file-cta:focus,
+.file-name:active,
+.file-name:focus,
+.input:active,
+.input:focus,
+.is-active.button,
+.is-active.file-cta,
+.is-active.file-name,
+.is-active.input,
+.is-active.pagination-ellipsis,
+.is-active.pagination-link,
+.is-active.pagination-next,
+.is-active.pagination-previous,
+.is-active.textarea,
+.is-focused.button,
+.is-focused.file-cta,
+.is-focused.file-name,
+.is-focused.input,
+.is-focused.pagination-ellipsis,
+.is-focused.pagination-link,
+.is-focused.pagination-next,
+.is-focused.pagination-previous,
+.is-focused.textarea,
+.pagination-ellipsis:active,
+.pagination-ellipsis:focus,
+.pagination-link:active,
+.pagination-link:focus,
+.pagination-next:active,
+.pagination-next:focus,
+.pagination-previous:active,
+.pagination-previous:focus,
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus,
+.textarea:active,
+.textarea:focus {
+  outline: 2px solid #0A3054;
+}
+
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
@@ -175,4 +228,20 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+.visually-hidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
 }
